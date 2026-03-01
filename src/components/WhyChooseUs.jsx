@@ -39,16 +39,18 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50/50 to-gray-100/50 backdrop-blur-sm">
+    <section className="py-16 bg-gradient-to-b from-gray-100 to-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
-        {/* Optional section heading if needed */}
-        {/* <h2 className="text-3xl font-semibold text-gray-800 mb-10">Why Choose Us</h2> */}
+        {/* Optional section heading – uncomment if needed */}
+        {/* <h2 className="font-heading text-3xl font-semibold text-gray-800 mb-10">Why Choose Us</h2> */}
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden p-6"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              className="group relative bg-gradient-to-b from-gray-100 to-gray-200 rounded-2xl border border-gray-300 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden p-6 active:scale-95 md:active:scale-100"
             >
               {/* Metallic shine overlay */}
               <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
@@ -58,14 +60,15 @@ const WhyChooseUs = () => {
                 {feature.icon}
               </div>
               
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 relative inline-block">
+              {/* Title – Montserrat */}
+              <h3 className="font-heading text-lg font-semibold text-gray-800 mb-2 relative inline-block">
                 {feature.title}
+                {/* Animated underline on hover */}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-gray-600 to-gray-400 group-hover:w-full transition-all duration-300"></span>
               </h3>
               
-              {/* Description */}
-              <p className="text-sm text-gray-600">
+              {/* Description – Inter */}
+              <p className="font-sans text-sm text-gray-600">
                 {feature.description}
               </p>
             </div>

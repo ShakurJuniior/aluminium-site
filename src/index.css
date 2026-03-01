@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+}
+
+/* html {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+
+html {
+  overflow-y: scroll !important;
+  scrollbar-gutter: stable; /* prevents layout shift when scrollbar appears */
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}

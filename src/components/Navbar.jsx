@@ -1,39 +1,38 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-// import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-gray-100 to-gray-200 border-b border-gray-300 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-20 py-5 flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full bg-gradient-to-b from-gray-900 to-gray-800 border-b border-gray-700 shadow-lg backdrop-blur-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-5 flex items-center justify-between">
         
-        {/* Logo with left shift */}
-        <Link to="/" className="flex items-center gap-3 -ml-1.5">
-          <img
-            // src={logo}
-            alt="Agnes Aluminium Logo"
-            className="h-8 md:h-10 w-auto object-contain"
+        {/* Logo – removed negative margin */}
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+            alt="logo" 
+            className="h-8 md:h-10 w-auto invert brightness-0" 
           />
-          <span className="text-xl font-semibold tracking-tight text-gray-800">
+          <span className="font-heading text-xl font-semibold tracking-tight text-white">
             Agnes Aluminium
           </span>
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-700">
-          <Link to="/" className="hover:text-gray-900 transition-colors duration-200">
+        {/* Desktop Nav (unchanged) */}
+        <nav className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-300">
+          <Link to="/" className="font-sans hover:text-blue-400 transition-colors duration-200">
             Home
           </Link>
-          <Link to="/products" className="hover:text-gray-900 transition-colors duration-200">
+          <Link to="/products" className="font-sans hover:text-blue-400 transition-colors duration-200">
             Products
           </Link>
-          <Link to="/services" className="hover:text-gray-900 transition-colors duration-200">
+          <Link to="/services" className="font-sans hover:text-blue-400 transition-colors duration-200">
             Services
           </Link>
-          <Link to="/about" className="hover:text-gray-900 transition-colors duration-200">
+          <Link to="/about" className="font-sans hover:text-blue-400 transition-colors duration-200">
             About
           </Link>
         </nav>
@@ -42,45 +41,43 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className="px-6 py-2.5 text-sm font-semibold border border-gray-600 text-gray-800 rounded-xl hover:bg-gray-700 hover:text-white hover:shadow-inner transition-all duration-300"
+            className="font-sans px-6 py-2.5 text-sm font-semibold bg-blue-600 text-white rounded-xl hover:bg-blue-500 transition-all duration-300 shadow-md hover:shadow-blue-500/20"
           >
             Get a Quote
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden text-gray-800"
-        >
+        <button onClick={() => setOpen(!open)} className="md:hidden text-white">
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu with slide-down animation */}
+      {/* Mobile Menu (unchanged) */}
       <div
         className={`
-          md:hidden overflow-hidden transition-all duration-300 ease-in-out
-          ${open ? 'max-h-96 opacity-100 translate-y-0 visible' : 'max-h-0 opacity-0 -translate-y-2 invisible'}
+          absolute left-0 right-0 top-full md:hidden overflow-hidden transition-all duration-700 ease-in-out
+          ${open ? 'max-h-96 opacity-100 visible' : 'max-h-0 opacity-0 invisible'}
+          bg-gradient-to-b from-gray-800 to-gray-900 border-b border-gray-700 shadow-xl
         `}
       >
-        <div className="border-t border-gray-300 bg-gradient-to-b from-gray-100 to-gray-200 px-6 py-6 space-y-6 text-gray-700 font-medium shadow-inner">
-          <Link to="/" onClick={() => setOpen(false)} className="block hover:text-gray-900">
+        <div className="px-6 py-6 space-y-6 text-gray-200 font-medium">
+          <Link to="/" onClick={() => setOpen(false)} className="font-sans block hover:text-blue-400">
             Home
           </Link>
-          <Link to="/products" onClick={() => setOpen(false)} className="block hover:text-gray-900">
+          <Link to="/products" onClick={() => setOpen(false)} className="font-sans block hover:text-blue-400">
             Products
           </Link>
-          <Link to="/services" onClick={() => setOpen(false)} className="block hover:text-gray-900">
+          <Link to="/services" onClick={() => setOpen(false)} className="font-sans block hover:text-blue-400">
             Services
           </Link>
-          <Link to="/about" onClick={() => setOpen(false)} className="block hover:text-gray-900">
+          <Link to="/about" onClick={() => setOpen(false)} className="font-sans block hover:text-blue-400">
             About
           </Link>
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="block text-center px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-700 hover:text-white hover:shadow-inner transition-all duration-300"
+            className="font-sans block text-center px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-500 transition-all duration-300 shadow-md"
           >
             Get a Quote
           </Link>
