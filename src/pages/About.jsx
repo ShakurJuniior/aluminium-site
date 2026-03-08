@@ -110,11 +110,11 @@
                 </div>
                 </div>
                 <div data-aos="fade-left" className="relative">
-                <div className="aspect-video rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                <div className="aspect-video h-100 rounded-2xl overflow-hidden shadow-xl border border-gray-200">
                     <img
-                    src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&auto=format"
+                    src="agnes.png"
                     alt="Aluminium factory"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full "
                     />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-gray-200 hidden md:block">
@@ -271,7 +271,7 @@
                 className="flex flex-col sm:flex-row gap-4 justify-center"
             >
                 <a
-                href="/contact"
+                href="/#contact"
                 className="px-8 py-4 text-sm font-semibold bg-blue-600 text-white rounded-xl hover:bg-blue-500 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-blue-200/50"
                 >
                 Get a Quote

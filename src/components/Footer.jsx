@@ -56,9 +56,8 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>© 2026 Agnes Aluminium Company. All rights reserved.</p>
           <div className="flex gap-8">
-            <a className="hover:text-gray-900 transition-colors" href="#">Privacy Policy</a>
-            <a className="hover:text-gray-900 transition-colors" href="#">Terms of Service</a>
-            <a className="hover:text-gray-900 transition-colors" href="#">ISO 9001 Certified</a>
+            <span>CAC Certified</span>
+            <span>Powered by Lithe Integrated Services Ltd</span>
           </div>
         </div>
       </div>
