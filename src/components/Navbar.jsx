@@ -74,13 +74,13 @@
             <Link to="/about" onClick={() => setOpen(false)} className="font-sans block hover:text-blue-400">
               About
             </Link>
-            <a
-              to="/#contact"
+            <Link
+              to="/contact"
               onClick={() => setOpen(false)}
               className="font-sans block text-center px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-500 transition-all duration-300 shadow-md"
             >
               Get a Quote
-            </a>
+            </Link>
           </div>
         </div>
       </header>

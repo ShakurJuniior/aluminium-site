@@ -10,7 +10,7 @@ html {
 }
 
 html {
-  /* overflow-y: scroll !important; */
+  overflow-y: scroll !important;
   /* scrollbar-gutter: stable;  prevents layout shift when scrollbar appears  */
 }
 body {
