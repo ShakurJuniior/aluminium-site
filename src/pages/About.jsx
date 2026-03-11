@@ -1,5 +1,5 @@
 import { Users, Target, Award, Truck, Factory, CheckCircle, MapPin, Phone, Mail } from "lucide-react";
-
+import {Link} from 'react-router-dom';
 const About = () => {
   const stats = [
     { value: "25+", label: "Years Excellence" },
@@ -17,7 +17,7 @@ const About = () => {
     {
       icon: <Award className="w-8 h-8" />,
       title: "Quality Assured",
-      desc: "ISO 9001 certified processes.",
+      desc: "CAC Certified.",
     },
     {
       icon: <Truck className="w-8 h-8" />,
@@ -32,8 +32,8 @@ const About = () => {
   ];
 
   const team = [
-    { name: "Adaobi Okonkwo", role: "Managing Director", image: null },
-    { name: "Chidi Eze", role: "Head of Engineering", image: null },
+    { name: "Agnes", role: "Chief Executive Officer", image: "/Ceo.png" },
+    { name: "Nnachi CHUKWUEMEKA Augustine", role: "Production Manager", image: "/prod.png" },
     { name: "Ngozi Nnamdi", role: "Operations Lead", image: null },
   ];
 
@@ -189,8 +189,16 @@ const About = () => {
                 data-aos-delay={i * 100}
                 className="group bg-white/50 backdrop-blur-sm rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-xl transition-all duration-300 text-center"
               >
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                  <Users size={32} className="text-blue-500" />
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <Users size={32} className="text-blue-500" />
+                  )}
                 </div>
                 <h3 className="font-heading text-lg font-semibold text-gray-800">
                   {member.name}
@@ -210,18 +218,32 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <span className="inline-block text-xs font-heading font-semibold tracking-widest uppercase text-blue-600 border border-blue-200 rounded-full px-4 py-1.5 bg-blue-50/80 backdrop-blur-sm shadow-sm mb-4">
-                Our Location
+                Our Locations
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
-                Visit Our Facility in Aba
+                Visit Our Facilities in Aba
               </h2>
               <div className="space-y-4 font-sans text-gray-600">
                 <p>
                   We are proudly based in the industrial heart of Abia State, serving clients locally and globally.
                 </p>
+                {/* Main Branch */}
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                  <span className="break-words">Km 7 Aba-Enugu Express Road, Osisioma, Aba, Abia State, Nigeria</span>
+                  <div>
+                    <span className="font-semibold text-gray-700">Main Branch:</span>
+                    <span className="block break-words">Km 7 Aba-Enugu Express Road, Osisioma, Aba, Abia State, Nigeria</span>
+                  </div>
+                </div>
+                {/* Second Branch */}
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-gray-700">Second Branch:</span>
+                    <span className="block break-words">
+                      Km 20 Aba/PH Expressway, Iriegbe Akashi bus stop, Obiakpor LGA, beside Earthwall filling station
+                    </span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-blue-500" />
@@ -237,7 +259,7 @@ const About = () => {
             </div>
             <div data-aos="fade-left" className="rounded-2xl overflow-hidden shadow-xl border border-gray-200 h-64 md:h-80 lg:h-96">
               <iframe
-                title="Agnes Aluminium Location"
+                title="Agnes Aluminium Main Location"
                 src="https://www.google.com/maps?q=Km+7+Aba-Enugu+Express+Road+Osisioma+Aba+Abia+Nigeria&output=embed"
                 className="w-full h-full"
                 style={{ border: 0 }}
@@ -271,12 +293,12 @@ const About = () => {
             data-aos-delay="100"
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
-              href="/#contact"
+            <Link 
+              to ="/contact"
               className="px-8 py-4 text-sm font-semibold bg-blue-600 text-white rounded-xl hover:bg-blue-500 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-blue-200/50"
             >
               Get a Quote
-            </a>
+            </Link>
             <a
               href="https://wa.me/2348101891860"
               target="_blank"
