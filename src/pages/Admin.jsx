@@ -101,7 +101,7 @@ const compressImage = async (file, maxWidth = 800, maxHeight = 800, quality = 0.
 
 // ---------- Main Component ----------
 const AdminDashboard = () => {
-  const { signOut } = useAuth();
+  const { logout } = useAuth();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({ name: "", category: "", description: "", specs: "", image: "" });
@@ -404,7 +404,7 @@ const AdminDashboard = () => {
                 </div>
               ))}
             </div>
-            <button onClick={signOut} className="flex items-center gap-3 px-4 py-3 text-slate-300 hover:bg-red-500/10 rounded-xl w-full border border-transparent hover:border-red-500/30">
+            <button onClick={logout} className="flex items-center gap-3 px-4 py-3 text-slate-300 hover:bg-red-500/10 rounded-xl w-full border border-transparent hover:border-red-500/30">
               <LogOut size={20} className="text-slate-400 group-hover:text-red-400" />
               <span className="font-medium">Logout</span>
             </button>
@@ -431,7 +431,7 @@ const AdminDashboard = () => {
                     </div>
                   ))}
                 </div>
-                <button onClick={signOut} className="p-2.5 bg-slate-800/50 border border-slate-700/50 rounded-xl hover:bg-slate-700/50 text-slate-400 hover:text-red-400">
+                <button onClick={logout} className="p-2.5 bg-slate-800/50 border border-slate-700/50 rounded-xl hover:bg-slate-700/50 text-slate-400 hover:text-red-400">
                   <LogOut size={20} />
                 </button>
               </div>

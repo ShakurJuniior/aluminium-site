@@ -300,7 +300,7 @@ const About = () => {
               Get a Quote
             </Link>
             <a
-              href="https://wa.me/2348101891860"
+              href="https://wa.me/2348167195073"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 text-sm font-semibold border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-all duration-300"
