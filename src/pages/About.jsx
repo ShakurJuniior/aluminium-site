@@ -32,9 +32,9 @@ const About = () => {
   ];
 
   const team = [
-    { name: "Agnes", role: "Chief Executive Officer", image: "/Ceo.png" },
+    { name: "Kelechi Nwokejiezi(Dr Agnes Nwanma)", role: "Chief Executive Officer", image: "/Ceo.png" },
     { name: "Nnachi CHUKWUEMEKA Augustine", role: "Production Manager", image: "/prod.png" },
-    { name: "Ngozi Nnamdi", role: "Operations Lead", image: null },
+    { name: "Akudo Chinyere", role: "Accountant", image: "/acount.png" },
   ];
 
   return (
@@ -252,7 +252,7 @@ const About = () => {
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-blue-500" />
                   <a href="mailto:projects@agnesaluminium.com" className="hover:text-blue-600 transition-colors">
-                    projects@agnesaluminium.com
+                    info@agnesaluminium.com.ng
                   </a>
                 </div>
               </div>
