@@ -33,7 +33,7 @@ const About = () => {
 
   const team = [
     { name: "Kelechi Nwokejiezi(Dr Agnes Nwanma)", role: "Chief Executive Officer", image: "/Ceo.png" },
-    { name: "Nnachi CHUKWUEMEKA Augustine", role: "Production Manager", image: "/prod.png" },
+    { name: "Nnachi Chukwuemeka Augustine", role: "Production Manager", image: "/prod.png" },
     { name: "Akudo Chinyere", role: "Accountant", image: "/acount.png" },
   ];
 

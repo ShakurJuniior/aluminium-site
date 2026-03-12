@@ -257,8 +257,8 @@ const ProductDetails = () => {
                         <Package className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                       </div>
                       <div>
-                        <p className="text-xs text-slate-500 font-medium">Product ID</p>
-                        <p className="text-xs sm:text-sm font-mono font-semibold text-slate-700">#{product.id}</p>
+                        {/* <p className="text-xs text-slate-500 font-medium">Product ID</p> */}
+                        {/* <p className="text-xs sm:text-sm font-mono font-semibold text-slate-700">#{product.id}</p> */}
                       </div>
                     </div>
                     <div className="flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-emerald-100 rounded-full">

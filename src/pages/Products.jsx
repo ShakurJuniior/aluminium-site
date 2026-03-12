@@ -13,7 +13,7 @@ const Products = () => {
 
   useEffect(() => {
     if (products.length > 0) {
-      console.log('First product image URL:', products[0].image);
+      // console.log('First product image URL:', products[0].image);
     }
   }, [products]);
 

@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop"; // fixed typo (was SrollToTop)
 import WhatsAppButton from './WhatsAppButton';
+import SmartsuppChat from './Smartsupp'; // import
 
 const Layout = () => {
   const location = useLocation();
@@ -25,6 +26,7 @@ const Layout = () => {
 
       <WhatsAppButton/>
       {/* Footer – hidden on admin routes */}
+       {!isAdminRoute && <SmartsuppChat />}
       {!isAdminRoute && <Footer />}
 
     </div>
