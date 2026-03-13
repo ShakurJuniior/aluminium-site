@@ -112,7 +112,7 @@ const About = () => {
             <div data-aos="fade-left" className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-xl border border-gray-200">
                 <img
-                  src="agnes.png"
+                  src="/about/image.png"
                   alt="Aluminium factory"
                   className="w-full h-full object-cover"
                   loading="lazy"

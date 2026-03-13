@@ -12,9 +12,9 @@
           {/* Logo – removed negative margin */}
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+              src="/logo/nav1.png" 
               alt="logo" 
-              className="h-8 md:h-10 w-auto invert brightness-0" 
+              className="h-8 md:h-10 w-auto " 
             />
             <span className="font-heading text-xl font-semibold tracking-tight text-white">
               Agnes Aluminium

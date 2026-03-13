@@ -17,7 +17,7 @@ const Portfolio = () => {
     },
     {
       title: "Stone Tiles",
-      image: "/stonetiles.jpg",
+      image: "/stonetiles.jpeg",
       description:
         "Natural stone‑look aluminium tiles offering the elegance of stone with the lightweight strength of metal. Ideal for facades and feature walls.",
     },
