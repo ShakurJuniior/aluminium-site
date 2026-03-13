@@ -99,7 +99,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 font-sans text-gray-600">
                 <p>
-                  Founded in 1998, Agnes Aluminium began as a small fabrication shop in Aba, Abia State. Today, we are a trusted name in aluminium extrusion, supplying industries from construction to renewable energy.
+                  Founded in November 2022, Agnes Aluminium began as a small fabrication shop in Aba, Abia State. Today, we are a trusted name in aluminium extrusion, supplying industries from construction to renewable energy.
                 </p>
                 <p>
                   Our commitment to quality, innovation, and sustainability has driven our growth. We combine local expertise with global standards, delivering profiles that architects and engineers rely on.
