@@ -12,7 +12,7 @@
           {/* Logo – removed negative margin */}
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src="/logo/nav1.png" 
+              src="/logo/nav.png" 
               alt="logo" 
               className="h-8 md:h-10 w-auto " 
             />
